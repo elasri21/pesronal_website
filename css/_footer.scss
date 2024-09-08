@@ -1,0 +1,32 @@
+footer {
+  background-color: #000016;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  .footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    span {
+      color: $mainColor;
+    }
+  }
+  .social-icon {
+    a {
+      text-decoration: none;
+      font-size: 1.3em;
+      padding: 0 12px 0 0;
+      color: #fff;
+      &:hover {
+        color: $secondColor;
+      }
+    }
+  }
+  @media #{$mobile} {
+    display: block;
+    text-align: center;
+    .footer-title {
+      margin-bottom: 10px;
+    }
+  }
+}
